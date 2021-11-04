@@ -1,0 +1,181 @@
+@startuml
+
+title __WIDGET's Class Diagram__\n
+
+  namespace com.example.widget_turntable {
+    namespace bigggfish_turntableView {
+      namespace widget {
+        class com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView {
+            {static} + MODE_INDICATOR_ROTATING : int
+            {static} + MODE_PLATE_ROTATING : int
+            - animatorDescending : ObjectAnimator
+            - btnSignIn : Button
+            - delayMillis : long
+            - mBtnText : String
+            - mItemCount : int
+            - mTurnsNum : int
+            - rotatingMode : int
+            - stopPosition : int
+            + LuckyPlateView()
+            + LuckyPlateView()
+            + getBtnText()
+            + getRotatingMode()
+            + getStopDelayMillis()
+            + getStopPosition()
+            + getTurnsNum()
+            + removeAnimationListener()
+            + setBitmapMap()
+            + setBtnText()
+            + setItemBitmapList()
+            + setItemTextStrList()
+            + setOnBtnClickListener()
+            + setOnRotatingStopListener()
+            + setRotatingMode()
+            + setStartBtnClickable()
+            + setStopDelayMillis()
+            + setStopPosition()
+            + setTurnsNum()
+            + startRotating()
+            - initChildView()
+            - initRotationAnim()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace bigggfish_turntableView {
+      namespace widget {
+        interface com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView.OnBtnClickListener {
+            {abstract} + onClick()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace bigggfish_turntableView {
+      namespace widget {
+        interface com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView.OnRotatingStopListener {
+            {abstract} + onStop()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace bigggfish_turntableView {
+      namespace widget {
+        class com.example.widget_turntable.bigggfish_turntableView.widget.TurntableView {
+            - bg : Bitmap
+            - defAngle : int
+            - mBaseWidthScale : float
+            - mBgPaint : Paint
+            - mBitmapArrays : Bitmap[]
+            - mBitmapMap : Map<String, Bitmap>
+            - mBtnWidthScale : float
+            - mCenterX : int
+            - mCenterY : int
+            - mDelayMillis : long
+            - mInnerArcPaint : Paint
+            - mInnerColor : int[]
+            - mInnerRange : RectF
+            - mInnerWidthScale : float
+            - mItemCount : int
+            - mMidArcPaint : Paint
+            - mMidColor : int[]
+            - mMidRange : RectF
+            - mMidWidthScale : float
+            - mOvalPaint : Paint
+            - mOvalWidthScale : float
+            - mPaddingBottom : int
+            - mPaddingLeft : int
+            - mPaddingRight : int
+            - mPaddingTop : int
+            - mRadius : int
+            - mRotateBitmapArray : Bitmap[]
+            - mScreenWidth : int
+            - mStartAngle : float
+            - mStopPosition : int
+            - mTextColor : int[]
+            - mTextList : List<String>
+            - mTextPaint : Paint
+            - mTextRange : Rect
+            - mTextSize : float
+            - mTextStrings : String[]
+            - mTurnsNum : int
+            - valueAnimator : ValueAnimator
+            + TurntableView()
+            + TurntableView()
+            + getBitmapArrays()
+            + getTextList()
+            + getTurnsNum()
+            + removeAnimation()
+            + setBitmapArrays()
+            + setBitmapList()
+            + setBitmapMap()
+            + setInnerColor()
+            + setMidColor()
+            + setOnRotationListener()
+            + setStartAngle()
+            + setStopPosition()
+            + setTextList()
+            + setTextSize()
+            + setTurnsNum()
+            + startRotatingDelay()
+            + startRotation()
+            # onDraw()
+            # onMeasure()
+            - drawBg()
+            - drawBitmap()
+            - drawBitmap2()
+            - drawText()
+            - getDelayMillis()
+            - getStopPosition()
+            - initAngle()
+            - initData()
+            - initPaint()
+            - initRect()
+            - initRotationAnimator()
+            - measureScreenSize()
+            - setData()
+            - setDelayMillis()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace bigggfish_turntableView {
+      namespace widget {
+        interface com.example.widget_turntable.bigggfish_turntableView.widget.TurntableView.OnRotationListener {
+            {abstract} + onStop()
+        }
+      }
+    }
+  }
+  
+
+  com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView -up-|> android.widget.FrameLayout
+  com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView o-- com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView.OnBtnClickListener : onBtnClickListener
+  com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView o-- com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView.OnRotatingStopListener : onRotatingStopListener
+  com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView o-- com.example.widget_turntable.bigggfish_turntableView.widget.TurntableView : turntableView
+  com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView +-down- com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView.OnBtnClickListener
+  com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView +-down- com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView.OnRotatingStopListener
+  com.example.widget_turntable.bigggfish_turntableView.widget.TurntableView -up-|> android.view.View
+  com.example.widget_turntable.bigggfish_turntableView.widget.TurntableView o-- com.example.widget_turntable.bigggfish_turntableView.widget.TurntableView.OnRotationListener : mListener
+  com.example.widget_turntable.bigggfish_turntableView.widget.TurntableView +-down- com.example.widget_turntable.bigggfish_turntableView.widget.TurntableView.OnRotationListener
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

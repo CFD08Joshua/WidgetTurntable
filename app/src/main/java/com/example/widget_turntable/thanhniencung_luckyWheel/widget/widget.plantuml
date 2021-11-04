@@ -1,0 +1,166 @@
+@startuml
+
+title __WIDGET's Class Diagram__\n
+
+  namespace com.example.widget_turntable {
+    namespace thanhniencung_luckyWheel {
+      namespace widget {
+        class com.example.widget_turntable.thanhniencung_luckyWheel.widget.LuckyWheelView {
+            - ivCursorView : ImageView
+            - mBackgroundColor : int
+            - mBorderColor : int
+            - mCenterImage : Drawable
+            - mCursorImage : Drawable
+            - mEdgeWidth : int
+            - mSecondaryTextSize : int
+            - mTextColor : int
+            - mTopTextPadding : int
+            - mTopTextSize : int
+            + LuckyWheelView()
+            + LuckyWheelView()
+            + dispatchTouchEvent()
+            + isTouchEnabled()
+            + rotateDone()
+            + setBorderColor()
+            + setData()
+            + setLuckyRoundItemSelectedListener()
+            + setLuckyWheelBackgrouldColor()
+            + setLuckyWheelCenterImage()
+            + setLuckyWheelCursorImage()
+            + setLuckyWheelTextColor()
+            + setPredeterminedNumber()
+            + setRound()
+            + setTouchEnabled()
+            + startLuckyWheelWithRandomTarget()
+            + startLuckyWheelWithTargetIndex()
+            - init()
+            - isPielView()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace thanhniencung_luckyWheel {
+      namespace widget {
+        interface com.example.widget_turntable.thanhniencung_luckyWheel.widget.LuckyWheelView.LuckyRoundItemSelectedListener {
+            {abstract} + LuckyRoundItemSelected()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace thanhniencung_luckyWheel {
+      namespace widget {
+        class com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView {
+            + touchEnabled : boolean
+            ~ downPressTime : long
+            ~ fingerRotation : double
+            ~ newRotationStore : double[]
+            ~ upPressTime : long
+            ~ viewRotation : float
+            - borderColor : int
+            - defaultBackgroundColor : int
+            - drawableCenterImage : Drawable
+            - isRunning : boolean
+            - mArcPaint : Paint
+            - mBackgroundPaint : Paint
+            - mCenter : int
+            - mEdgeWidth : int
+            - mLuckyItemList : List<LuckyItem>
+            - mPadding : int
+            - mRadius : int
+            - mRange : RectF
+            - mRoundOfNumber : int
+            - mSecondaryTextSize : int
+            - mStartAngle : float
+            - mTextPaint : TextPaint
+            - mTopTextPadding : int
+            - mTopTextSize : int
+            - predeterminedNumber : int
+            - textColor : int
+            + PielView()
+            + PielView()
+            + getLuckyItemListSize()
+            + isTouchEnabled()
+            + onTouchEvent()
+            + rotateTo()
+            + rotateTo()
+            + setBorderColor()
+            + setBorderWidth()
+            + setData()
+            + setPieBackgroundColor()
+            + setPieCenterImage()
+            + setPieRotateListener()
+            + setPieTextColor()
+            + setPredeterminedNumber()
+            + setRound()
+            + setSecondaryTextSizeSize()
+            + setTopTextPadding()
+            + setTopTextSize()
+            + setTouchEnabled()
+            # onDraw()
+            # onMeasure()
+            - drawBackgroundColor()
+            - drawCenterImage()
+            - drawImage()
+            - drawPieBackgroundWithBitmap()
+            - drawSecondaryText()
+            - drawTopText()
+            - getAngleOfIndexTarget()
+            - getFallBackRandomIndex()
+            - init()
+            - isColorDark()
+            - isRotationConsistent()
+            - newRotationValue()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace thanhniencung_luckyWheel {
+      namespace widget {
+        interface com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView.PieRotateListener {
+            {abstract} + rotateDone()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace thanhniencung_luckyWheel {
+      namespace widget {
+        interface com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView.SpinRotation {
+            {static} + CLOCKWISE : int
+            {static} + COUNTERCLOCKWISE : int
+        }
+      }
+    }
+  }
+  
+
+  com.example.widget_turntable.thanhniencung_luckyWheel.widget.LuckyWheelView .up.|> com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView.PieRotateListener
+  com.example.widget_turntable.thanhniencung_luckyWheel.widget.LuckyWheelView -up-|> android.widget.RelativeLayout
+  com.example.widget_turntable.thanhniencung_luckyWheel.widget.LuckyWheelView o-- com.example.widget_turntable.thanhniencung_luckyWheel.widget.LuckyWheelView.LuckyRoundItemSelectedListener : mLuckyRoundItemSelectedListener
+  com.example.widget_turntable.thanhniencung_luckyWheel.widget.LuckyWheelView o-- com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView : pielView
+  com.example.widget_turntable.thanhniencung_luckyWheel.widget.LuckyWheelView +-down- com.example.widget_turntable.thanhniencung_luckyWheel.widget.LuckyWheelView.LuckyRoundItemSelectedListener
+  com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView -up-|> android.view.View
+  com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView o-- com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView.PieRotateListener : mPieRotateListener
+  com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView +-down- com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView.PieRotateListener
+  com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView +-down- com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView.SpinRotation
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

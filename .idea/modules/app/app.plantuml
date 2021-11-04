@@ -1,0 +1,310 @@
+@startuml
+
+title __WIDGET_-_TURNTABLE.APP's Class Diagram__\n
+
+  namespace androidx.databinding {
+    class androidx.databinding.DataBinderMapperImpl {
+    }
+  }
+  
+
+  namespace androidx.databinding {
+    interface androidx.databinding.DataBindingComponent {
+    }
+  }
+  
+
+  namespace androidx.databinding {
+    namespace library.baseAdapters {
+      class androidx.databinding.library.baseAdapters.BR {
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    class com.example.widget_turntable.BR {
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    class com.example.widget_turntable.BuildConfig {
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    class com.example.widget_turntable.DataBinderMapperImpl {
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    class com.example.widget_turntable.MainActivity {
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace bigggfish_turntableView {
+      class com.example.widget_turntable.bigggfish_turntableView.BigggFishTurntableViewFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace bigggfish_turntableView {
+      namespace util {
+        class com.example.widget_turntable.bigggfish_turntableView.util.DisplayUtils {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace bigggfish_turntableView {
+      namespace widget {
+        class com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace bigggfish_turntableView {
+      namespace widget {
+        class com.example.widget_turntable.bigggfish_turntableView.widget.TurntableView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace databinding {
+      class com.example.widget_turntable.databinding.ActivityMainBindingImpl {
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace databinding {
+      class com.example.widget_turntable.databinding.FragmentBigggfishTurntableviewBindingImpl {
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace databinding {
+      class com.example.widget_turntable.databinding.FragmentHnsycsxhzcshTurntableviewBindingImpl {
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace databinding {
+      class com.example.widget_turntable.databinding.FragmentLotteryturntableBindingImpl {
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace databinding {
+      class com.example.widget_turntable.databinding.FragmentMmoamennLuckywheelBindingImpl {
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace databinding {
+      class com.example.widget_turntable.databinding.FragmentThanhniencungLuckywheelBindingImpl {
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace hnsycsxhzcsh_turntableView {
+      class com.example.widget_turntable.hnsycsxhzcsh_turntableView.TurntableViewFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace hnsycsxhzcsh_turntableView {
+      namespace utils {
+        class com.example.widget_turntable.hnsycsxhzcsh_turntableView.utils.LoggerUtil {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace hnsycsxhzcsh_turntableView {
+      namespace view {
+        class com.example.widget_turntable.hnsycsxhzcsh_turntableView.view.TurntableView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace mmoamenn_luckywheel {
+      class com.example.widget_turntable.mmoamenn_luckywheel.MmoamennLuckyWheelFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace mmoamenn_luckywheel {
+      namespace model {
+        class com.example.widget_turntable.mmoamenn_luckywheel.model.WheelItem {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace mmoamenn_luckywheel {
+      namespace widget {
+        class com.example.widget_turntable.mmoamenn_luckywheel.widget.LuckyWheel {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace mmoamenn_luckywheel {
+      namespace widget {
+        class com.example.widget_turntable.mmoamenn_luckywheel.widget.WheelView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace thanhniencung_luckyWheel {
+      class com.example.widget_turntable.thanhniencung_luckyWheel.ThanhniencungLuckyWheelFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace thanhniencung_luckyWheel {
+      namespace model {
+        class com.example.widget_turntable.thanhniencung_luckyWheel.model.LuckyItem {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace thanhniencung_luckyWheel {
+      namespace util {
+        class com.example.widget_turntable.thanhniencung_luckyWheel.util.LuckyWheelUtils {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace thanhniencung_luckyWheel {
+      namespace widget {
+        class com.example.widget_turntable.thanhniencung_luckyWheel.widget.LuckyWheelView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace thanhniencung_luckyWheel {
+      namespace widget {
+        class com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace wangchengmeng_lotteryturntable {
+      class com.example.widget_turntable.wangchengmeng_lotteryturntable.LotteryTurntableFrgament {
+      }
+    }
+  }
+  
+
+  namespace com.example.widget_turntable {
+    namespace wangchengmeng_lotteryturntable {
+      namespace view {
+        class com.example.widget_turntable.wangchengmeng_lotteryturntable.view.LuckSpan {
+        }
+      }
+    }
+  }
+  
+
+  androidx.databinding.DataBinderMapperImpl -up-|> androidx.databinding.MergedDataBinderMapper
+  com.example.widget_turntable.DataBinderMapperImpl -up-|> androidx.databinding.DataBinderMapper
+  com.example.widget_turntable.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.widget_turntable.bigggfish_turntableView.BigggFishTurntableViewFragment -up-|> androidx.fragment.app.Fragment
+  com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView -up-|> android.widget.FrameLayout
+  com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView o-- com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView.OnBtnClickListener : onBtnClickListener
+  com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView o-- com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView.OnRotatingStopListener : onRotatingStopListener
+  com.example.widget_turntable.bigggfish_turntableView.widget.LuckyPlateView o-- com.example.widget_turntable.bigggfish_turntableView.widget.TurntableView : turntableView
+  com.example.widget_turntable.bigggfish_turntableView.widget.TurntableView -up-|> android.view.View
+  com.example.widget_turntable.bigggfish_turntableView.widget.TurntableView o-- com.example.widget_turntable.bigggfish_turntableView.widget.TurntableView.OnRotationListener : mListener
+  com.example.widget_turntable.hnsycsxhzcsh_turntableView.TurntableViewFragment -up-|> androidx.fragment.app.Fragment
+  com.example.widget_turntable.hnsycsxhzcsh_turntableView.view.TurntableView -up-|> android.view.View
+  com.example.widget_turntable.hnsycsxhzcsh_turntableView.view.TurntableView o-- com.example.widget_turntable.hnsycsxhzcsh_turntableView.view.TurntableView.ITurntableListener : listener
+  com.example.widget_turntable.mmoamenn_luckywheel.MmoamennLuckyWheelFragment -up-|> androidx.fragment.app.Fragment
+  com.example.widget_turntable.mmoamenn_luckywheel.widget.LuckyWheel .up.|> android.view.View.OnTouchListener
+  com.example.widget_turntable.mmoamenn_luckywheel.widget.LuckyWheel .up.|> com.example.widget_turntable.mmoamenn_luckywheel.widget.WheelView.OnRotationListener
+  com.example.widget_turntable.mmoamenn_luckywheel.widget.LuckyWheel -up-|> android.widget.FrameLayout
+  com.example.widget_turntable.mmoamenn_luckywheel.widget.LuckyWheel o-- com.example.widget_turntable.mmoamenn_luckywheel.widget.WheelView : wheelView
+  com.example.widget_turntable.mmoamenn_luckywheel.widget.WheelView -up-|> android.view.View
+  com.example.widget_turntable.mmoamenn_luckywheel.widget.WheelView o-- com.example.widget_turntable.mmoamenn_luckywheel.widget.WheelView.OnLuckyWheelReachTheTarget : mOnLuckyWheelReachTheTarget
+  com.example.widget_turntable.mmoamenn_luckywheel.widget.WheelView o-- com.example.widget_turntable.mmoamenn_luckywheel.widget.WheelView.OnRotationListener : onRotationListener
+  com.example.widget_turntable.thanhniencung_luckyWheel.ThanhniencungLuckyWheelFragment -up-|> androidx.fragment.app.Fragment
+  com.example.widget_turntable.thanhniencung_luckyWheel.widget.LuckyWheelView .up.|> com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView.PieRotateListener
+  com.example.widget_turntable.thanhniencung_luckyWheel.widget.LuckyWheelView -up-|> android.widget.RelativeLayout
+  com.example.widget_turntable.thanhniencung_luckyWheel.widget.LuckyWheelView o-- com.example.widget_turntable.thanhniencung_luckyWheel.widget.LuckyWheelView.LuckyRoundItemSelectedListener : mLuckyRoundItemSelectedListener
+  com.example.widget_turntable.thanhniencung_luckyWheel.widget.LuckyWheelView o-- com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView : pielView
+  com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView -up-|> android.view.View
+  com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView o-- com.example.widget_turntable.thanhniencung_luckyWheel.widget.PielView.PieRotateListener : mPieRotateListener
+  com.example.widget_turntable.wangchengmeng_lotteryturntable.LotteryTurntableFrgament .up.|> android.view.View.OnClickListener
+  com.example.widget_turntable.wangchengmeng_lotteryturntable.LotteryTurntableFrgament -up-|> androidx.fragment.app.Fragment
+  com.example.widget_turntable.wangchengmeng_lotteryturntable.view.LuckSpan .up.|> android.view.SurfaceHolder.Callback
+  com.example.widget_turntable.wangchengmeng_lotteryturntable.view.LuckSpan .up.|> java.lang.Runnable
+  com.example.widget_turntable.wangchengmeng_lotteryturntable.view.LuckSpan -up-|> android.view.SurfaceView
+  com.example.widget_turntable.wangchengmeng_lotteryturntable.view.LuckSpan o-- com.example.widget_turntable.wangchengmeng_lotteryturntable.view.LuckSpan.SpanRollListener : mSpanRollListener
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
